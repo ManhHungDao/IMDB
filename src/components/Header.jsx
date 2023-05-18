@@ -1,16 +1,13 @@
 import React from "react";
 import MenuItem from "./MenuItem";
 import { AiFillHome } from "react-icons/ai";
-import {
-  BsInfoCircleFill,
-  BsFillSunFill,
-  BsFillMoonFill,
-} from "react-icons/Bs";
+import { BsInfoCircleFill } from "react-icons/Bs";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-between mx-2 max-w-6xl sm:mx-auto sm:py-6">
-      <div className="flex items-center ">
+    <div className="flex items-center justify-between max-w-6xl  sm:mx-auto sm:py-6 px-3">
+      <div className="flex items-center gap-5">
         <div className="">
           <MenuItem title="Home" address="/" Icon={AiFillHome} />
         </div>
@@ -29,7 +26,8 @@ const Header = () => {
           <MenuItem title="Home" address="/" Icon={AiFillHome} />
         </div>
       </div> */}
-      <div className="">
+      <div className="flex items-center justify-center gap-5">
+        <DarkModeSwitch />
         <h2>
           <span className="bg-amber-500 font-bold rounded-lg py-1 px-2">
             IMDB
