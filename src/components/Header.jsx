@@ -6,7 +6,7 @@ import DarkModeSwitch from "./DarkModeSwitch";
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-between max-w-6xl  sm:mx-auto sm:py-6 px-4">
+    <div className="flex items-center justify-between max-w-6xl  sm:mx-auto sm:py-6 p-4">
       <div className="flex items-center gap-5">
         <div className="">
           <MenuItem title="Home" address="/" Icon={AiFillHome} />

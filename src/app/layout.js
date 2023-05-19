@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
-// import { ThemeProvider } from "next-themes";
-import "./globals.css";
+import NavBar from "@/components/NavBar";
 import Providers from "./Providers";
+import "./globals.css";
 
 export const metadata = {
   title: "IMDB",
@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           <Header />
+          <NavBar />
           {children}
         </Providers>
       </body>
