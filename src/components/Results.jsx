@@ -1,12 +1,10 @@
 import React from "react";
+import Card from "./Card";
 
 const Results = ({ results }) => {
   return (
-    <div>
-      {results &&
-        results.map((results) => {
-          return <div key={results.id}>{results.original_title}</div>;
-        })}
+    <div className="max-w-6xl mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 py-4 gap-3">
+      {results && results.map((item) => <Card key={item.id} item={item} />)}
     </div>
   );
 };
