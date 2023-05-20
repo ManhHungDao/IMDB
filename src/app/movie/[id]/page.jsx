@@ -30,8 +30,7 @@ const Movie = async ({ params }) => {
         />
         <div className="space-y-4">
           <h2 className="font-bold text-lg">
-            {" "}
-            {data.original_title || data.title}
+            {data.title}
           </h2>
           <p>{data.overview}</p>
           <p className="font-bold"> Date Released: {data.release_date}</p>

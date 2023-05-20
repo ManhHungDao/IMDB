@@ -20,10 +20,10 @@ const Card = ({ item }) => {
           style={{ width: "100%", height: "auto" }}
         />
         <p className="text-ellipsis line-clamp-2 text-sm">{item.overview}</p>
-        <p className="font-bold truncate">{item.original_title}</p>
+        <p className="font-bold truncate">{item.title}</p>
         <p className="flex justify-between items-center">
           <span>{item.release_date}</span>
-          <span className="flex items-center jusitfy-between gap-1">
+          <span className="flex items-center justify-between gap-1">
             <AiOutlineLike className="" />
             {item.vote_count}
           </span>
